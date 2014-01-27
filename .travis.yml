@@ -9,4 +9,7 @@ install:
     - cd src/
     - make -f makefile.unix test_dogecoin
 
+before_script:
+    - cd /home/travis/build/sinemetu1/dogecoin-1_5_alpha
+
 script: ./src/test_dogecoin
